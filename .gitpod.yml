@@ -7,6 +7,14 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: ./gradlew run
+  - init: |
+
+    command: 
+     ./gradlew bootRun
+     # Runing form a JAR file
+     #./gradlew bootJar
+     #java -jar build/libs/Stirling-PDF-0.23.2.jar
+
+
 
 
